@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Reatlehile Motshekalle - From Toka ❤️</title>
+<style>
+  :root{
+    --bg:#080710;
+    --rose:#ff4d6d;
+    --gold:#ffd166;
+    --text:#fdfdfd;
+    --muted:#d1d1d8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins", sans-serif;}
+  body{background:var(--bg);color:var(--text);overflow-x:hidden;}
+
+  /* Floating hearts + sparkles */
+  .hearts{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;}
+  .heart{position:absolute;color:var(--rose);font-size:20px;animation:float 12s linear infinite;opacity:.6;}
+  @keyframes float{
+    0%{transform:translateY(100vh) scale(0);}
+    50%{opacity:1;}
+    100%{transform:translateY(-10vh) scale(1.2);opacity:0;}
+  }
+
+  /* Hero */
+  header{
+    height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;
+    background:linear-gradient(rgba(8,7,16,.5),rgba(8,7,16,.9)), url('Reatlehile1.jpg') center/cover fixed no-repeat;
+    text-align:center;padding:20px;position:relative;z-index:1;
+  }
+  header h1{font-size:3.5rem;color:var(--gold);text-shadow:0 0 25px rgba(255,209,102,.8);margin-bottom:10px;}
+  header .subtitle{font-size:1.3rem;margin:15px 0;max-width:650px;color:var(--muted);}
+  .btn{background:var(--rose);color:#fff;padding:14px 32px;border:none;border-radius:30px;
+       font-size:1.1rem;cursor:pointer;transition:.3s;text-decoration:none;margin:10px;}
+  .btn:hover{background:#ff2e55;box-shadow:0 0 25px var(--rose);}
+
+  /* Sections */
+  section{padding:90px 20px;max-width:1200px;margin:auto;position:relative;z-index:1;}
+  h2{text-align:center;font-size:2.5rem;margin-bottom:50px;color:var(--gold);}
+
+  /* About Her */
+  .about{
+    display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;
+    background:rgba(255,255,255,.04);padding:40px;border-radius:25px;border:1px solid rgba(255,77,109,.2);
+    backdrop-filter:blur(12px);
+  }
+  .about img{width:100%;border-radius:20px;box-shadow:0 10px 40px rgba(255,77,109,.3);}
+  .about-text h3{color:var(--rose);font-size:1.8rem;margin-bottom:15px;}
+  .about-text p{line-height:1.8;font-size:1.1rem;margin-bottom:12px;}
+  .fact{color:var(--gold);font-weight:bold;}
+
+  /* Gallery */
+  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
+  .gallery h3{grid-column:1/-1;text-align:center;color:var(--rose);font-size:1.6rem;margin-bottom:10px;}
+  .gallery img{
+    width:100%;height:380px;object-fit:cover;border-radius:20px;
+    transition:.4s;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.5);
+  }
+  .gallery img:hover{transform:scale(1.05) rotate(-1deg);box-shadow:0 0 35px var(--gold);}
+
+  /* Love Letter */
+  .letter{
+    background:linear-gradient(135deg, rgba(255,77,109,.1), rgba(255,209,102,.1));
+    padding:50px;border-radius:25px;border:1px solid rgba(255,77,109,.3);
+    line-height:1.9;font-size:1.15rem;backdrop-filter:blur(10px);
+  }
+  .letter span{color:var(--rose);font-weight:bold;}
+  .signature{text-align:right;margin-top:20px;font-size:1.3rem;color:var(--gold);}
+
+  /* Footer */
+  footer{text-align:center;padding:40px;font-size:1rem;color:var(--muted);}
+  
+  /* Modal */
+  .modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.95);
+         justify-content:center;align-items:center;z-index:999;}
+  .modal img{max-width:90%;max-height:90%;border-radius:20px;box-shadow:0 0 50px var(--rose);}
+  
+  @media(max-width:800px){.about{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<div class="hearts" id="hearts"></div>
+
+<header>
+  <h1>Reatlehile Motshekalle</h1>
+  <p class="subtitle">"You are my today, all of my tomorrows, and the best thing that ever happened to me. - Toka"</p>
+  <a href="#about" class="btn">About You</a>
+  <a href="#gallery" class="btn">Our Memories</a>
+</header>
+
+<section id="about">
+  <h2>All About My Favorite Person</h2>
+  <div class="about">
+    <img src="Reatlehile2.jpg" alt="Reatlehile">
+    <div class="about-text">
+      <h3>Reatlehile Motshekalle</h3>
+      <p><span class="fact">Born:</span> October 04, 2010 ✨</p>
+      <p><span class="fact">To Toka, she is:</span> My sunshine on cloudy days, my peace, my biggest blessing.</p>
+      <p>Reatlehile, your name means "the grateful one" and you live up to it every single day. 
+      The way you care, the way you laugh, the way you make even ordinary moments feel magical... 
+      I fall for you more every time.</p>
+      <p>You have the kindest heart I’ve ever known. You’re smart, beautiful inside and out, 
+      and you make me want to be the best version of myself. The world is so much brighter because you’re in it.</p>
+      <p>I promise to protect your smile, to be your safe place, and to love you in every little way. 
+      Thank you for choosing me. I choose you, today and always.</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Our Little World</h2>
+  
+  <div class="gallery">
+    <h3>Beautiful Reatlehile 💖</h3>
+    <img src="Reatlehile1.jpg" onclick="openModal(this.src)">
+    <img src="Reatlehile2.jpg" onclick="openModal(this.src)">
+    <img src="Reatlehile3.jpg" onclick="openModal(this.src)">
+    <img src="Reatlehile4.jpg" onclick="openModal(this.src)">
+    <img src="Reatlehile5.jpg" onclick="openModal(this.src)">
+  </div>
+
+  <div class="gallery" style="margin-top:60px;">
+    <h3>Toka 💙</h3>
+    <img src="Toka1.jpg" onclick="openModal(this.src)">
+    <img src="Toka2.jpg" onclick="openModal(this.src)">
+    <img src="Toka3.jpg" onclick="openModal(this.src)">
+    <img src="Toka4.jpg" onclick="openModal(this.src)">
+    <img src="Toka5.jpg" onclick="openModal(this.src)">
+  </div>
+</section>
+
+<section id="letter">
+  <h2>A Letter From Toka</h2>
+  <div class="letter">
+    <p>My Dearest <span>Reatlehile</span>,</p>
+    <p>I knew you would never let me down. And you haven’t. Not once.</p>
+    <p>Since October 04, 2010, the world got someone as special as you. And I got so lucky to know you. 
+    Your birthday is my favorite day because it’s the day the person I love most was born.</p>
+    <p>I love the way your eyes light up. I love how you remember small things. I love how safe I feel when we talk. 
+    With you, everything makes sense. You’re not just my girlfriend, you’re my best friend, my partner, my home.</p>
+    <p>I’m so proud of the person you are and the person you’re becoming. I’ll be right here cheering for you, 
+    holding your hand, and loving you through everything.</p>
+    <p>Thank you for being you. Thank you for being mine.</p>
+    <p class="signature">Forever yours,<br>Toka ❤️</p>
+  </div>
+</section>
+
+<footer>
+  Made with all my love for Reatlehile by Toka © 2026
+</footer>
+
+<div class="modal" id="imgModal" onclick="this.style.display='none'">
+  <img id="modalImg" src="">
+</div>
+
+<script>
+  // Floating hearts
+  const heartsContainer = document.getElementById('hearts');
+  function createHeart(){
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.innerHTML = Math.random() > 0.5 ? '❤️' : '✨';
+    heart.style.left = Math.random()*100 + 'vw';
+    heart.style.fontSize = Math.random()*20 + 12 + 'px';
+    heart.style.animationDuration = Math.random()*5 + 6 + 's';
+    heartsContainer.appendChild(heart);
+    setTimeout(()=>heart.remove(),12000);
+  }
+  setInterval(createHeart,350);
+
+  // Modal gallery
+  function openModal(src){
+    document.getElementById('modalImg').src = src;
+    document.getElementById('imgModal').style.display = 'flex';
+  }
+</script>
+
+</body>
+</html>
